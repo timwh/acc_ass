@@ -1,5 +1,5 @@
 """
-add_class2ref.py - Script to join classes from classified ploygons to reference points
+add_class2ref.py - Script to join classes from classified polygons to reference points
 Author: Tim Whiteside
 Requires: geopandas
 """
@@ -7,7 +7,7 @@ Requires: geopandas
 import geopandas as gpd
 import os
 
-# Load classification shapefile (must incl. field "Class_name")
+# Load classification shapefile (must include a field called "Class_name")
 class_shp = "your/path/classified_polygons.shp"
 class_polys = gpd.read_file(class_shp)
 
