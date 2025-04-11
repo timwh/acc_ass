@@ -22,6 +22,6 @@ A number of tools to help with accuracy assessment of classification of remote s
 |:-:|:-:|:------:|:-------:|
 |||Correct|Wrong|
 |<b>Classification</b>|Correct|168|10|
-|2|Wrong|3|24|
+|<b>2</b>|Wrong|3|24|
 
 statistic: 3.0000, p-value: 0.0923
