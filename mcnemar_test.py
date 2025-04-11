@@ -1,6 +1,6 @@
 """
 mcnemars_test.py - Comparing the difference between two classifications
-of the same area based on a sin=gle set of reference data.
+of the same scene based on a single set of reference data.
 Author: Tim Whiteside
 Requires: geopandas, pandas, numpy, statsmodels
 """
