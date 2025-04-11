@@ -10,12 +10,12 @@ A number of tools to help with accuracy assessment of classification of remote s
   | 3	| submerged	| 167093.0	| 41 |
   | 4	| water	| 314130.0 |	78 |
 
-<img src="https://github.com/timwh/acc_ass/blob/main/images/Screenshot2025-04-11-104137.png" width="350" height="350" />
+<img src="https://github.com/timwh/acc_ass/blob/main/images/Screenshot 2025-03-31093809.png" width="350" height="350" />
 
 <b>[add_class2ref.py](https://github.com/timwh/acc_ass/blob/main/add_class2ref.py)</b> - Add the class name from the classified shapefile to the reference point set. <br>
 <b>[conf_matrix.py](https://github.com/timwh/acc_ass/blob/main/conf_matrix.py)</b> - Create confusion matrix with overall, user's and producer's accuracies, and Kappa statistic
 
-<img src="https://github.com/timwh/acc_ass/blob/main/images/Screenshot2025-03-28160534.png" width="400" height="400" /><br>
+<img src="https://github.com/timwh/acc_ass/blob/main/images/Screenshot2025-04-11-104137.png" width="400" height="400" /><br>
 <b>[mcnemar_test.py](https://github.com/timwh/acc_ass/blob/main/mcnemar_test.py)</b> - Conduct a McNemar test to describe difference between two classifications using same reference e.g.
 
 |||Classification|1|
