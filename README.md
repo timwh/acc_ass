@@ -18,7 +18,7 @@ A number of tools to help with accuracy assessment of classification of remote s
 <img src="https://github.com/timwh/acc_ass/blob/main/images/Screenshot2025-03-28160534.png" width="400" height="400" /><br>
 <b>[mcnemar_test.py](https://github.com/timwh/acc_ass/blob/main/mcnemar_test.py)</b> - Conduct a McNemar test to describe difference between two classifications using same reference
 
-|||Classification1||
+|||Classification1|
 |:-:|:-:|:------|:-------|
 |||Correct|Wrong|
 |Classification|Correct|168|10|
