@@ -16,7 +16,7 @@ A number of tools to help with accuracy assessment of classification of remote s
 <b>[conf_matrix.py](https://github.com/timwh/acc_ass/blob/main/conf_matrix.py)</b> - Create confusion matrix with overall, user's and producer's accuracies, and Kappa statistic
 
 <img src="https://github.com/timwh/acc_ass/blob/main/images/Screenshot2025-03-28160534.png" width="400" height="400" /><br>
-<b>[mcnemar_test.py](https://github.com/timwh/acc_ass/blob/main/mcnemar_test.py)</b> - Conduct a McNemar test to describe difference between two classifications using same reference
+<b>[mcnemar_test.py](https://github.com/timwh/acc_ass/blob/main/mcnemar_test.py)</b> - Conduct a McNemar test to describe difference between two classifications using same reference e.g.
 
 |||Classification|1|
 |:-:|:-:|:------:|:-------:|
