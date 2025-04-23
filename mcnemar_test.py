@@ -90,6 +90,7 @@ print(f"statistic: {result.statistic:.4f}, p-value: {result.pvalue:.4f}")
 # Table as array and labels
 atable = np.array(table)
 labels = ["Correct","Wrong"]
+
 # Plot out contigency table
 plt.figure(figsize=(4, 3))
 ax = sns.heatmap(atable, annot=True, fmt="d", cmap="Blues", cbar=False,
@@ -97,11 +98,10 @@ ax = sns.heatmap(atable, annot=True, fmt="d", cmap="Blues", cbar=False,
                  xticklabels=labels,
                  #yticklabels=["A correct", "A wrong"],
                  yticklabels=labels,)
-plt.title("McNemar Contingency Table")
+plt.title(f"McNemar Contingency Table\nstatistic: {result.statistic:.4f}, p-value: {result.pvalue:.4f}")
 plt.xlabel("Classifier B")
 plt.ylabel("Classifier A")
 
 plt.tight_layout()
 plt.show()
-print(f"McNemar statistic: {result.statistic:.4f}, p-value: {result.pvalue:.4f}")
 
