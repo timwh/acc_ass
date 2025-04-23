@@ -7,6 +7,8 @@ Requires: geopandas, pandas, numpy, statsmodels
 import geopandas as gpd
 import numpy as np
 from statsmodels.stats.contingency_tables import mcnemar
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 # Reference data set
 ref_pts = gpd.read_file("your/reference.shp")
@@ -84,3 +86,22 @@ result = mcnemar(table, exact=True)  # Use exact or chi2
 print("Contingency Table:")
 print(np.array(table))
 print(f"statistic: {result.statistic:.4f}, p-value: {result.pvalue:.4f}")
+
+# Table as array and labels
+atable = np.array(table)
+labels = ["Correct","Wrong"]
+# Plot out contigency table
+plt.figure(figsize=(4, 3))
+ax = sns.heatmap(atable, annot=True, fmt="d", cmap="Blues", cbar=False,
+                 #xticklabels=["B correct", "B wrong"],
+                 xticklabels=labels,
+                 #yticklabels=["A correct", "A wrong"],
+                 yticklabels=labels,)
+plt.title("McNemar Contingency Table")
+plt.xlabel("Classifier B")
+plt.ylabel("Classifier A")
+
+plt.tight_layout()
+plt.show()
+print(f"McNemar statistic: {result.statistic:.4f}, p-value: {result.pvalue:.4f}")
+
