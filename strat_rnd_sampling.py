@@ -63,7 +63,7 @@ for _, row in class_area.iterrows():
 
 # Convert to GeoDataFrame
 sample_gdf = gpd.GeoDataFrame(sample_points, columns=["geometry", "Class_name"], crs=gdf.crs)
-# Add an empty colum for reference data
+# Add an empty column for reference data
 sample_gdf["ref_num"] = None
 
 # Save sampled points to a new shapefile
