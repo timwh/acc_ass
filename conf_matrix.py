@@ -14,7 +14,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score, cohen_kappa_score,
 class_gdf = gpd.read_file("your/path/points_with_class.shp")
 points_gdf = class_gdf[['ref_num','Class_name']]
 
-# Drop points with no dat in either field
+# Drop points with no data in either field
 points_gdf = points_gdf.dropna(subset=["ref_num"])
 points_gdf = points_gdf.dropna(subset=["Class_name"])
 
